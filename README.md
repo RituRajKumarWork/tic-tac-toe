@@ -1,4 +1,4 @@
-# Tic Tac Toe Game with Reinforcement Learning
+# Tic Tac Toe Game with Reinforcement Learning (js)
 
 ## Overview
 
@@ -11,6 +11,8 @@ This is a web-based Tic Tac Toe game featuring various difficulty levels: **Easy
 - **Winning Animation**: Celebratory animations occur when a player wins.
 - **Sound Effects**: Clapping sound plays when a player wins.
 - **Responsive Design**: The game is visually appealing and designed for children.
+- ![TicTacToe](https://github.com/user-attachments/assets/414b8cde-7ab9-4281-b7ef-4263901fdb46)
+
 
 ## Technologies Used
 
