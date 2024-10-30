@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <p id="game-message">Choose a level to start playing!</p>
+
+        <!-- Choose Level Button -->
+        <button id="choose-level-btn" onclick="toggleModeSelection()">Choose Level</button>
+        <p id="chosen-level" class="hidden"></p>
+
+        <!-- Mode Selection (Initially Hidden) -->
+        <div id="mode-selection" class="mode-selection hidden">
+            <button onclick="setMode('easy')">Easy</button>
+            <button onclick="setMode('medium')">Medium</button>
+            <button onclick="setMode('impossible')">Impossible</button>
+            <button onclick="setMode('friend')">Play Against a Friend</button>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board">
+            <div id="cell-0" class="cell" onclick="playerMove(0)"></div>
+            <div id="cell-1" class="cell" onclick="playerMove(1)"></div>
+            <div id="cell-2" class="cell" onclick="playerMove(2)"></div>
+            <div id="cell-3" class="cell" onclick="playerMove(3)"></div>
+            <div id="cell-4" class="cell" onclick="playerMove(4)"></div>
+            <div id="cell-5" class="cell" onclick="playerMove(5)"></div>
+            <div id="cell-6" class="cell" onclick="playerMove(6)"></div>
+            <div id="cell-7" class="cell" onclick="playerMove(7)"></div>
+            <div id="cell-8" class="cell" onclick="playerMove(8)"></div>
+        </div>
+
+        <!-- Reset Game Button -->
+        <button onclick="resetGame()" class="reset-button">Reset Game</button>
+    </div>
+
+    <!-- Clapping Sound -->
+    <audio id="clapping-sound" src="audio.MP3"></audio>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

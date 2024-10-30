@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffebcd;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fef5e7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#game-message {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#chosen-level {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.mode-selection {
+    margin-bottom: 20px;
+}
+
+.mode-selection.hidden {
+    display: none;
+}
+
+#choose-level-btn, .mode-selection button, .reset-button {
+    background-color: #8fbc8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#choose-level-btn:hover, .mode-selection button:hover, .reset-button:hover {
+    background-color: #6b8e23;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f5deb3;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    background-color: #ffe4b5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #ffdab9;
+    transform: scale(1.05);
+}
+
+.cell.disabled {
+    pointer-events: none;
+    background-color: #dcdcdc;
+}
+
+.reset-button {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #5f9ea0;
+}
+
+.win-animation {
+    animation: win-animation 1s ease-in-out;
+}
+
+@keyframes win-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
