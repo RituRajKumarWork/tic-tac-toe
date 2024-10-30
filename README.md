@@ -1,5 +1,7 @@
 # Tic Tac Toe Game with Reinforcement Learning (js)
 
+[Live](https://riturajkumarwork.github.io/tic-tac-toe/)
+[Live](https://riturajkumarwork.github.io/tic-tac-toe/)
 ## Overview
 
 This is a web-based Tic Tac Toe game featuring various difficulty levels: **Easy**, **Medium**, **Impossible**, and **Play Against a Friend**. The game is implemented using HTML, CSS, and JavaScript, with the Impossible level powered by the Minimax algorithm for optimal bot performance.
