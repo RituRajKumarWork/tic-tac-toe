@@ -1,7 +1,7 @@
 # Tic Tac Toe Game with Reinforcement Learning (js)
 
 
-[Live](https://riturajkumarwork.github.io/tic-tac-toe/)
+[Live](https://riturajkumarwork.github.io/tictactoe/)
 
 ## Overview
 
