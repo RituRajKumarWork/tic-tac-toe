@@ -112,12 +112,18 @@ h1 {
     background-color: #5f9ea0;
 }
 
-.win-animation {
-    animation: win-animation 1s ease-in-out;
+.win-line {
+    background-color: rgba(0, 255, 0, 0.3);
+    position: relative;
 }
 
-@keyframes win-animation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+.win-line::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    background: green;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
 }
