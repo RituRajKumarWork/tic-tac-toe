@@ -3,6 +3,7 @@
 
 [Live](https://riturajkumarwork.github.io/tictactoe/)
 
+
 ## Overview
 
 This is a web-based Tic Tac Toe game featuring various difficulty levels: **Easy**, **Medium**, **Impossible**, and **Play Against a Friend**. The game is implemented using HTML, CSS, and JavaScript, with the Impossible level powered by the Minimax algorithm for optimal bot performance.
