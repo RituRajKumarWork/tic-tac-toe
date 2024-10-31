@@ -24,7 +24,7 @@ function resetGame() {
         let cell = document.getElementById(`cell-${i}`);
         cell.innerText = '';
         cell.classList.remove('disabled');
-        cell.classList.remove('win-animation');
+        cell.classList.remove('win-line');
     }
 }
 
@@ -91,14 +91,14 @@ function makeBotMove(position) {
 
 function checkWin(player) {
     const winningCombinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],
-        [0, 4, 8], [2, 4, 6]
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+        [0, 4, 8], [2, 4, 6]             // Diagonals
     ];
 
     for (let combo of winningCombinations) {
         if (combo.every(index => board[index] === player)) {
-            combo.forEach(index => document.getElementById(`cell-${index}`).classList.add('win-animation'));
+            combo.forEach(index => document.getElementById(`cell-${index}`).classList.add('win-line'));
             return true;
         }
     }
